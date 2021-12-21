@@ -38,10 +38,14 @@
     Enter a calculation with an illegal character eg $  -> I expect to see a vallidation error which is shown.
     Enter a calculation with two operators next to each other -> I expect to see a vallidation error which is shown.
     Enter a calcualtion where we are dividing by 0 -> I expect to see an message saying cannot divide by zero which is shown.
+    
+    Enter a calculation where we do 8*6/2 -> This test will fail and return an incorrect value as the calculator 
+    doesn't support these rules. ie it would read it and process it in order and not process it based on the fact the division should occur first.
+    It wont break the page from running but will not return the correct value.
 
 ## Improvements
 
     - Have a result entity so when we return a result we can have a float value and a message which can be displayed for better user feedback.
-    - Enable the use of brackets, this would require rewriting or exttending the logic in the calculator class, perhaps even extending the calculator    class with scientific calculator class which has more operators.
-    - More complex rules so we can follow thee correct mathematic bodmas so if we could process multiplication brackets and division in the correct order.
+    - Enable the use of brackets, this would require rewriting or extending the logic in the calculator class, perhaps even extending the calculator class with scientific calculator class which has more operators.
+    - More complex rules so we can follow thee correct mathematic BODMAS rules so if we could process multiplication brackets and division in the correct order.
     - Handle the rendering of the form in the calculator service to mnake the controller simpler which is better practice. 
