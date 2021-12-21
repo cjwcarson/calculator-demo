@@ -33,15 +33,12 @@
     DivideOperator -> I expect 18/3 to return 6 and it does so passes.
     MultiplyOperator -> I expect 2*5 to return 10 and it does so passes.
     SubtractOperator -> I expect 0.5-1 to return -0.5 and it does so passes.
-
+    Multiple Operators -> I expect 8*6/2 to return 24 and it does so passes.
+  
     Enter a calculation with a number with two '.'s in it -> I expect to see a validation error which is shown.
     Enter a calculation with an illegal character eg $  -> I expect to see a vallidation error which is shown.
     Enter a calculation with two operators next to each other -> I expect to see a vallidation error which is shown.
     Enter a calcualtion where we are dividing by 0 -> I expect to see an message saying cannot divide by zero which is shown.
-    
-    Enter a calculation where we do 8*6/2 -> This test will fail and return an incorrect value as the calculator 
-    doesn't support these rules. ie it would read it and process it in order and not process it based on the fact the division should occur first.
-    It wont break the page from running but will not return the correct value.
 
 ## Improvements
 
