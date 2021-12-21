@@ -1,0 +1,5 @@
+# config/routes.yaml
+
+calculator:
+    path: /
+    controller: App\Controller\CalculatorController::index
