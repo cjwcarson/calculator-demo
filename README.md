@@ -3,11 +3,11 @@
  - PHP 7.2+
  - Composer 2.1+
 
-## Instalation 
+## Installation 
  
  - `composer install`
 
-## Running Applicaiton
+## Running Application
 
  - `symfony server:start`
  - server starts go to 127.0.0.1/8000 routing will direct through to the calculator controller.
